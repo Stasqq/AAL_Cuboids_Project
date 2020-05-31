@@ -90,6 +90,11 @@ int main(int argc, char **argv) {
           double averageRatioSpaceToCuboid = atof(argv[4]);
           Generator generator(cuboidsNumber,averageRatioSpaceToCuboid);
           inputSpace = generator.generateSpace();
+        }else if(argc == 7){
+          int cuboidsNumber = atoi(argv[3]);
+          double averageRatioSpaceToCuboid = atof(argv[4]);
+          Generator generator(cuboidsNumber,averageRatioSpaceToCuboid);
+          inputSpace = generator.generateSpace(atoi(argv[5]),atoi(argv[5]));
         }else{
           cout<<"Wrong arguments number!\n";
           return 1;
@@ -128,7 +133,13 @@ int main(int argc, char **argv) {
 
     switch(inputModeSwitch){
       case GENERATOR:{
-        string outputFileName(argv[5]);
+        string outputFileName;
+        if(argc == 6){
+          outputFileName = argv[5];
+        }else{
+          outputFileName = argv[6];
+        }
+
         FileHandler fileHandler;
         fileHandler.saveAlgorithmOutput(outputFileName, algorithmOutput);
       }break;
