@@ -187,3 +187,33 @@ Jeśli nazwa pliku była poprawna pojawi się nowe okno dialogowe, w którym wy�
 
 Aby wyświetlić graficzną reprezentację rozwiązania należy wybrać Tryb widoku (Poziomo - widok przekroju poprzecznego, Pionowo - widok przekroju pionowego), tryb ten można potem zmieniać.
 Następnie korzystając z suwaka i miejsca do wpisywania można wybierać numer wyświetlanego przekroju.
+
+
+## Struktura plików
+### Plik wejsciowy części obliczeniowej
+```txt
+Wymiar_x_przestrzeni Wymiar_y_przestrzeni
+X_p1 Y_p1 Z_p1
+X_p2 Y_p2 Z_p2
+...
+```
+p1, p2 są to kolejne prostopadłościany.
+
+X, Y, Z to wymiary prostopadłościanu.
+
+Przykładowy plik znajduje się w repozytorium.
+### Plik wyjsciowy części obliczeniowe oraz wejściowy części prezentacyjnej
+```txt
+Czas_wykonania_w_ms
+Wymiar_x_przestrzeni Wymiar_y_przestrzeni Wymiar_z_przestrzeni
+X_p1 Y_p1 Z_p1 pozycja_x_p1 pozycja_y_p1 pozycja_z_p1
+X_p2 Y_p2 Z_p2 pozycja_x_p2 pozycja_y_p2 pozycja_z_p2
+...
+```
+p1, p2 są to kolejne prostopadłościany.
+
+X, Y, Z to wymiary prostopadłościanu.
+
+Pozycja oznacza położenie według danej osi współrzędnych.
+
+Przykładowy plik znajduje się w repozytorium.
