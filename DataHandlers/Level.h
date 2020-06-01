@@ -19,7 +19,7 @@ public:
 
     bool setSectorOccupied(int x1, int y1, int x2, int y2);
 
-    LevelSegmentCords* findFreeSector(int x, int y, int startX, int startY);
+    LevelSegmentCords *findFreeSector(int x, int y, int startX, int startY);
 
     int findHoleInRow(int holeLength, int rowNumber, int startPlace);
 
@@ -34,6 +34,5 @@ public:
     void printLevel();
 
 };
-
 
 #endif //CUBOIDS_AAL_LEVEL_H

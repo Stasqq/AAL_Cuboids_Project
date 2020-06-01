@@ -16,10 +16,11 @@
 #include "../Algorithms/FourTowersAlgorithm.h"
 #include "../Generator/Generator.h"
 
-#define BRUTE_FORCE_ALGORITHM  1
+#define BRUTE_FORCE_ALGORITHM 1
 #define SINGLE_TOWER_ALGORITHM 2
-#define FOUR_TOWERS_ALGORITHM  3
-#define SEARCHING_ALGORITHM    4
+#define FOUR_TOWERS_ALGORITHM 3
+#define SEARCHING_ALGORITHM 4
+
 
 class PresentResult {
 
@@ -35,7 +36,8 @@ private:
     std::set<double> asymptotes;
 
 public:
-    PresentResult(int algorithmSwitch, int increasingProblemSize, int incrementator, int stepsNumber, int problemsSolvedInStep, double generatorRatio);
+    PresentResult(int algorithmSwitch, int increasingProblemSize, int incrementator, int stepsNumber,
+                  int problemsSolvedInStep, double generatorRatio);
 
     void startMeasurement(int x);
 

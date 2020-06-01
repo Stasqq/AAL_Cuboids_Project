@@ -5,8 +5,8 @@
 #include "AlgorithmOutput.h"
 
 AlgorithmOutput::AlgorithmOutput(Space *outputSpace, double time) {
-    this->outputSpace = outputSpace;
-    this->elapsedTimeInMs = time;
+    this -> outputSpace = outputSpace;
+    this -> elapsedTimeInMs = time;
 }
 
 double AlgorithmOutput::getElapsedTimeInMs() const {

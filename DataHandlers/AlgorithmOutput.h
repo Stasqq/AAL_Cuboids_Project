@@ -25,5 +25,4 @@ public:
     void setOutputSpace(Space *outputSpace);
 };
 
-
 #endif //CUBOIDS_AAL_ALGORITHMOUTPUT_H

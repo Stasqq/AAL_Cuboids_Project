@@ -6,6 +6,7 @@
 #define CUBOIDS_AAL_SEARCHINGALGORITHM_H
 
 #include <algorithm>
+
 #include "CuboidAlgorithm.h"
 
 class SearchingAlgorithm : public CuboidAlgorithm {
@@ -16,10 +17,9 @@ public:
 
     void handleCuboid(Cuboid *cuboid) override;
 
-    void sortCuboidsByBiggestVolume(std::vector<Cuboid>* cuboids);
+    void sortCuboidsByBiggestVolume(std::vector <Cuboid> *cuboids);
 
     int getAsymptote();
 };
-
 
 #endif //CUBOIDS_AAL_SEARCHINGALGORITHM_H

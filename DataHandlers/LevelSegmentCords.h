@@ -5,10 +5,9 @@
 #ifndef CUBOIDS_AAL_LEVELSEGMENTCORDS_H
 #define CUBOIDS_AAL_LEVELSEGMENTCORDS_H
 
-
 class LevelSegmentCords {
 private:
-    int x1,y1,x2,y2;
+    int x1, y1, x2, y2;
     int startLevel;
     int height;
 public:
@@ -32,6 +31,5 @@ public:
 
     void setHeight(int height);
 };
-
 
 #endif //CUBOIDS_AAL_LEVELSEGMENTCORDS_H

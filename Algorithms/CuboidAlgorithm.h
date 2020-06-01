@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <chrono>
+
 #include "../DataHandlers/Cuboid.h"
 #include "../DataHandlers/AlgorithmOutput.h"
 #include "Space.h"
@@ -22,6 +23,5 @@ public:
     virtual void handleCuboid(Cuboid *cuboid) = 0;
 
 };
-
 
 #endif //CUBOIDS_AAL_CUBOIDALGORITHM_H

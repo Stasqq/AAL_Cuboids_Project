@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane id="scroll_pane" layoutY="86.0" prefHeight="682.0" prefWidth="1024.0" />
+      <Slider id="slider" layoutX="564.0" layoutY="45.0" prefHeight="14.0" prefWidth="446.0" />
+      <Label layoutX="393.0" layoutY="15.0" prefHeight="17.0" prefWidth="80.0" text="Tryb widoku">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <ComboBox id="combo_box" layoutX="358.0" layoutY="40.0" prefWidth="150.0" />
+      <Spinner id="spinner" layoutX="683.0" layoutY="12.0" prefHeight="25.0" prefWidth="67.0" />
+      <Label layoutX="564.0" layoutY="17.0" text="Warstwa">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="19.0" text="Czas wykonania algorytmu">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label id="time" layoutX="215.0" layoutY="19.0" text="time">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="52.0" text="Wymiary przestrzeni">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label id="dimensions" layoutX="215.0" layoutY="52.0" text="dimensions">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -7,16 +7,17 @@
 
 #include <vector>
 #include <iostream>
+
 #include "../DataHandlers/Cuboid.h"
 #include "../DataHandlers/Level.h"
 
 class Space {
 private:
     int x, y;
-    std::vector<Cuboid> cuboids;
-    std::vector<Level> levels;
+    std::vector <Cuboid> cuboids;
+    std::vector <Level> levels;
 public:
-    Space(std::vector<Cuboid> *startCuboids, int x, int y);
+    Space(std::vector <Cuboid> *startCuboids, int x, int y);
 
     Space(const Space &spaceTarget);
 
@@ -30,11 +31,12 @@ public:
 
     void addLevelOccupied(int x1, int y1, int x2, int y2);
 
-    LevelSegmentCords* addCornerOccupied(int levelNumber, int x, int y, int occupiedSizeX, int occupiedSizeY);
+    LevelSegmentCords *addCornerOccupied(int levelNumber, int x, int y, int occupiedSizeX, int occupiedSizeY);
 
-    LevelSegmentCords* isCornerSectorOccupiedInN(int startLevel, int levelNumber, int x, int y, int occupiedSizeX, int occupiedSizeY);
+    LevelSegmentCords *
+    isCornerSectorOccupiedInN(int startLevel, int levelNumber, int x, int y, int occupiedSizeX, int occupiedSizeY);
 
-    LevelSegmentCords* findPlaceForBruteForce(int x, int y, int z);
+    LevelSegmentCords *findPlaceForBruteForce(int x, int y, int z);
 
     void printSpace();
 
@@ -42,8 +44,7 @@ public:
 
     int getY() const;
 
-    std::vector<Cuboid>* getCuboidsVector();
+    std::vector <Cuboid> *getCuboidsVector();
 };
-
 
 #endif //CUBOIDS_AAL_SPACE_H

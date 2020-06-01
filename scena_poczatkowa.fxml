@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
+   <children>
+      <Button id="button" layoutX="91.0" layoutY="188.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="119.0" text="Zaladuj dane">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="57.0" prefHeight="74.0" prefWidth="257.0" text="Prosze podac nazwe pliku z danymi wejsciowymi" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField id="textField" layoutX="62.0" layoutY="135.0" promptText="Nazwa pliku">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

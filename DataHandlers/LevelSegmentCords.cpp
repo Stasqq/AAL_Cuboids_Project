@@ -5,19 +5,19 @@
 #include "LevelSegmentCords.h"
 
 LevelSegmentCords::LevelSegmentCords(int x1, int y1, int x2, int y2) {
-    this->x1=x1;
-    this->x2=x2;
-    this->y1=y1;
-    this->y2=y2;
+    this -> x1 = x1;
+    this -> x2 = x2;
+    this -> y1 = y1;
+    this -> y2 = y2;
 }
 
 LevelSegmentCords::LevelSegmentCords(int x1, int y1, int x2, int y2, int startLevel, int height) {
-    this->x1=x1;
-    this->x2=x2;
-    this->y1=y1;
-    this->y2=y2;
-    this->startLevel = startLevel;
-    this->height = height;
+    this -> x1 = x1;
+    this -> x2 = x2;
+    this -> y1 = y1;
+    this -> y2 = y2;
+    this -> startLevel = startLevel;
+    this -> height = height;
 }
 
 int LevelSegmentCords::getX1() const {
@@ -51,4 +51,3 @@ void LevelSegmentCords::setStartLevel(int startLevel) {
 void LevelSegmentCords::setHeight(int height) {
     LevelSegmentCords::height = height;
 }
-

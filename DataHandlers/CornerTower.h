@@ -10,7 +10,7 @@
 class CornerTower {
 private:
     int height;
-    int x,y;
+    int x, y;
 public:
     CornerTower(int x, int y);
 
@@ -26,6 +26,5 @@ public:
 
     int getY() const;
 };
-
 
 #endif //CUBOIDS_AAL_CORNERTOWER_H

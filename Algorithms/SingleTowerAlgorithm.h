@@ -5,7 +5,6 @@
 #ifndef CUBOIDS_AAL_SINGLETOWERALGORITHM_H
 #define CUBOIDS_AAL_SINGLETOWERALGORITHM_H
 
-
 #include "CuboidAlgorithm.h"
 
 class SingleTowerAlgorithm : public CuboidAlgorithm {
@@ -18,6 +17,5 @@ public:
 
     int getAsymptote();
 };
-
 
 #endif //CUBOIDS_AAL_SINGLETOWERALGORITHM_H

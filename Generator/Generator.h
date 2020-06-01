@@ -9,22 +9,22 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+
 #include "../Algorithms/Space.h"
 
 class Generator {
 private:
-  int cuboidsNumber;
-  double averageRatioSpaceToCuboid;
+    int cuboidsNumber;
+    double averageRatioSpaceToCuboid;
 public:
-  Generator(int cuboidsNumber, double averageRatioSpaceToCuboid);
+    Generator(int cuboidsNumber, double averageRatioSpaceToCuboid);
 
-  Cuboid* genetareCuboid(int x, int y, int id);
+    Cuboid *genetareCuboid(int x, int y, int id);
 
-  Space* generateSpace();
+    Space *generateSpace();
 
-  Space* generateSpace(int x, int y);
+    Space *generateSpace(int x, int y);
 
 };
-
 
 #endif //CUBOIDS_AAL_GENERATOR_H

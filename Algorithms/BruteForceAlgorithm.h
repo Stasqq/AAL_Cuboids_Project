@@ -6,6 +6,7 @@
 #define CUBOIDS_AAL_BRUTEFORCEALGORITHM_H
 
 #include <algorithm>
+
 #include "CuboidAlgorithm.h"
 
 class BruteForceAlgorithm : public CuboidAlgorithm {
@@ -16,16 +17,15 @@ public:
 
     AlgorithmOutput *runAlgorithm() override;
 
-    void handleCuboid(Cuboid* cuboid) override;
+    void handleCuboid(Cuboid *cuboid) override;
 
-    void handleCuboidTempSpace(Space * tempSpace,Cuboid *cuboid);
+    void handleCuboidTempSpace(Space *tempSpace, Cuboid *cuboid);
 
-    void calculatePermutation(std::vector<Cuboid>* cuboidVector, int iterator);
+    void calculatePermutation(std::vector <Cuboid> *cuboidVector, int iterator);
 
     int getAsymptote();
 
     int factorial(int i);
 };
-
 
 #endif //CUBOIDS_AAL_BRUTEFORCEALGORITHM_H

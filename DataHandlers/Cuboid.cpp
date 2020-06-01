@@ -5,65 +5,67 @@
 #include "Cuboid.h"
 
 Cuboid::Cuboid(int xSize, int ySize, int zSize) {
-    this->xSize = xSize;
-    this->ySize = ySize;
-    this->zSize = zSize;
+    this -> xSize = xSize;
+    this -> ySize = ySize;
+    this -> zSize = zSize;
 }
 
 Cuboid::Cuboid(int xSize, int ySize, int zSize, int id) {
-    this->xSize = xSize;
-    this->ySize = ySize;
-    this->zSize = zSize;
-    this->id = id;
+    this -> xSize = xSize;
+    this -> ySize = ySize;
+    this -> zSize = zSize;
+    this -> id = id;
 }
 
 void Cuboid::rotate(int rotateDirection) {
-    rotateDirection = rotateDirection %3;
-    switch(rotateDirection){
-        case 0:{
+    rotateDirection = rotateDirection % 3;
+    switch (rotateDirection) {
+        case 0: {
             rotateXY();
-        }break;
-        case 1:{
+        }
+            break;
+        case 1: {
             rotateYZ();
-        }break;
-        case 2:{
+        }
+            break;
+        case 2: {
             rotateXZ();
-        }break;
+        }
+            break;
     }
 }
 
 void Cuboid::rotateXY() {
-    int temp = this->xSize;
-    this->xSize = this->ySize;
-    this->ySize = temp;
+    int temp = this -> xSize;
+    this -> xSize = this -> ySize;
+    this -> ySize = temp;
 }
 
 void Cuboid::rotateXZ() {
-    int temp = this->xSize;
-    this->xSize = this->zSize;
-    this->zSize = temp;
+    int temp = this -> xSize;
+    this -> xSize = this -> zSize;
+    this -> zSize = temp;
 }
 
 void Cuboid::rotateYZ() {
-    int temp = this->ySize;
-    this->ySize = this->zSize;
-    this->zSize = temp;
+    int temp = this -> ySize;
+    this -> ySize = this -> zSize;
+    this -> zSize = temp;
 }
 
 void Cuboid::rotateToSmallestHeight() {
-    if(zSize <= xSize && zSize <= ySize){
+    if (zSize <= xSize && zSize <= ySize) {
         return;
-    }
-    else{
+    } else {
         int tempZ;
-        if(xSize <= ySize){
+        if (xSize <= ySize) {
             tempZ = xSize;
-            xSize=zSize;
-            zSize=tempZ;
-        }else{
+            xSize = zSize;
+            zSize = tempZ;
+        } else {
             tempZ = ySize;
-            ySize=zSize;
-            zSize=tempZ;
+            ySize = zSize;
+            zSize = tempZ;
         }
     }
 }
@@ -73,9 +75,9 @@ void Cuboid::calculateVolume() {
 }
 
 void Cuboid::setPosition(int x, int y, int z) {
-    this->x = x;
-    this->y = y;
-    this->z = z;
+    this -> x = x;
+    this -> y = y;
+    this -> z = z;
 }
 
 int Cuboid::getXSize() const {

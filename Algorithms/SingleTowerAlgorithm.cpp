@@ -8,8 +8,8 @@ AlgorithmOutput *SingleTowerAlgorithm::runAlgorithm() {
 
     auto start = std::chrono::steady_clock::now();
 
-    for (int i = 0; i < space->getCuboidsNumber(); i++)
-        handleCuboid(space->getCuboidPointer(i));
+    for (int i = 0; i < space -> getCuboidsNumber(); i++)
+        handleCuboid(space -> getCuboidPointer(i));
 
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> duration = end - start; //in seconds
@@ -19,14 +19,14 @@ AlgorithmOutput *SingleTowerAlgorithm::runAlgorithm() {
 }
 
 void SingleTowerAlgorithm::handleCuboid(Cuboid *cuboid) {
-    cuboid->rotateToSmallestHeight();
-    int actualSpaceHeight = space->getHeight();
-    for (int i = actualSpaceHeight; i < actualSpaceHeight + cuboid->getZSize(); i++) {
-        space->addLevelOccupied(0, 0, cuboid->getXSize(), cuboid->getYSize());
-        cuboid->setPosition(0, 0, actualSpaceHeight);
+    cuboid -> rotateToSmallestHeight();
+    int actualSpaceHeight = space -> getHeight();
+    for (int i = actualSpaceHeight; i < actualSpaceHeight + cuboid -> getZSize(); i++) {
+        space -> addLevelOccupied(0, 0, cuboid -> getXSize(), cuboid -> getYSize());
+        cuboid -> setPosition(0, 0, actualSpaceHeight);
     }
 }
 
-int SingleTowerAlgorithm::getAsymptote(){
-  return space->getCuboidsNumber();
+int SingleTowerAlgorithm::getAsymptote() {
+    return space -> getCuboidsNumber();
 }

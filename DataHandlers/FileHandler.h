@@ -5,13 +5,14 @@
 #ifndef CUBOIDS_AAL_FILEHANDLER_H
 #define CUBOIDS_AAL_FILEHANDLER_H
 
-#include "Cuboid.h"
-#include "../Algorithms/Space.h"
-#include "AlgorithmOutput.h"
 #include <vector>
 #include <string>
 #include <fstream>
 #include <iostream>
+
+#include "Cuboid.h"
+#include "../Algorithms/Space.h"
+#include "AlgorithmOutput.h"
 
 class FileHandler {
 public:
